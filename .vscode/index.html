@@ -71,6 +71,23 @@
 
     .kbd{background:#0c1220;border-radius:6px;padding:6px 8px;color:var(--muted);font-size:12px}
   </style>
+    <script>
+      // Small debug helper: if the page is opened with ?debug, flip to a light background
+      (function(){
+        if(typeof window !== 'undefined'){
+          const s = new URLSearchParams(window.location.search);
+          if(s.has('debug')){
+            document.documentElement.style.background = '#f7fafc';
+            document.body.style.background = '#f7fafc';
+            // add a visible badge so you know debug is active
+            const b = document.createElement('div');
+            b.textContent = 'DEBUG MODE';
+            b.style.position='fixed';b.style.left='8px';b.style.bottom='8px';b.style.padding='6px 8px';b.style.background='#111';b.style.color='#fff';b.style.fontSize='12px';b.style.borderRadius='6px';b.style.zIndex=9999;
+            document.body.appendChild(b);
+          }
+        }
+      })();
+    </script>
 </head>
 <body>
   <div class="viewport">

@@ -1,177 +1,1045 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Figma Right Sidebar Replica</title>
-  <style>
-    :root{
-      --bg:#0f1720; /* dark panel background */
-      --panel:#111318; /* slightly lighter */
-      --muted:#98a0ab;
-      --accent:#2b6cff;
-      --card:#14151a;
-      --border: rgba(255,255,255,0.04);
-      --input:#0b0c0f;
-      --glass: rgba(255,255,255,0.02);
-    }
-    html,body{height:100%;margin:0;font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef8;background:linear-gradient(180deg,#0b0d10 0%, #070809 100%);}    
-    .viewport{height:100vh;display:flex;align-items:flex-start;justify-content:flex-end;padding:24px;box-sizing:border-box}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-    /* the right panel container */
-    .panel{
-      width:360px; /* scaled to match screenshot */
-      background:var(--panel);
-      border-radius:10px;
-      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-      padding:14px 12px;
-      color:#dbe9ff;
-      border:1px solid var(--border);
-    }
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-    .header{display:flex;align-items:center;gap:8px;padding:6px 4px}
-    .header .title{font-weight:600}
-    .variant{margin-left:auto;background:#0d1116;padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
-    .variant select{background:transparent;border:none;color:var(--muted)}
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
 
-    .section{margin-top:12px;padding:10px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);}
-    .section h4{margin:0 0 8px 0;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
-    .row{display:flex;align-items:center;gap:8px}
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
 
-    /* Position grid */
-    .pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .pos-grid .align{background:var(--glass);height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
-
-    .inputs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
-    .input{
-      background:var(--input);border:1px solid var(--border);padding:8px;border-radius:6px;display:flex;align-items:center;gap:8px;color:#d2e6ff;font-size:13px;justify-content:space-between
-    }
-    .input .label{color:var(--muted);font-size:12px}
-
-    /* Auto layout section */
-    .controls{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-    .control{background:var(--glass);height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
-
-    .w-h{display:flex;gap:8px;margin-top:8px}
-    .w-h .box{background:var(--input);border:1px solid var(--border);padding:8px;border-radius:6px;color:#d2e6ff;font-size:13px;min-width:0;flex:1;display:flex;align-items:center;justify-content:space-between}
-
-    .big-input{height:56px;display:flex;align-items:center;justify-content:space-between;padding:10px;background:var(--input);border-radius:6px;border:1px solid var(--border);margin-top:10px}
-
-    .muted{color:var(--muted);font-size:13px}
-    .tiny{font-size:12px;color:var(--muted)}
-
-    /* small circular icon button */
-    .icon-btn{width:26px;height:26px;border-radius:6px;background:rgba(255,255,255,0.02);display:inline-flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
-
-    /* appearance */
-    .appearance .row{justify-content:space-between}
-    .appearance .eye{display:flex;gap:8px;align-items:center}
-
-    .divider{height:1px;background:var(--border);margin:10px 0;border-radius:2px}
-
-    .kbd{background:#0c1220;border-radius:6px;padding:6px 8px;color:var(--muted);font-size:12px}
-  </style>
-    <script>
-      // Small debug helper: if the page is opened with ?debug, flip to a light background
-      (function(){
-        if(typeof window !== 'undefined'){
-          const s = new URLSearchParams(window.location.search);
-          if(s.has('debug')){
-            document.documentElement.style.background = '#f7fafc';
-            document.body.style.background = '#f7fafc';
-            // add a visible badge so you know debug is active
-            const b = document.createElement('div');
-            b.textContent = 'DEBUG MODE';
-            b.style.position='fixed';b.style.left='8px';b.style.bottom='8px';b.style.padding='6px 8px';b.style.background='#111';b.style.color='#fff';b.style.fontSize='12px';b.style.borderRadius='6px';b.style.zIndex=9999;
-            document.body.appendChild(b);
-          }
-        }
-      })();
-    </script>
-</head>
-<body>
-  <div class="viewport">
-    <aside class="panel" role="region" aria-label="Properties">
-      <div class="header">
-        <div>
-          <div class="tiny">Hero Section1</div>
-          <div class="muted" style="font-size:13px">Current variant</div>
-        </div>
-        <div class="variant">
-          <span class="tiny">Property 1</span>
-          <select aria-label="Variant select">
-            <option>Variant1</option>
-            <option selected>Variant2</option>
-            <option>Variant3</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="section">
-        <h4>Position</h4>
-        <div class="pos-grid">
-          <div class="align">↖</div>
-          <div class="align">↑</div>
-          <div class="align">↗</div>
-          <div class="align">←</div>
-          <div class="align">•</div>
-          <div class="align">→</div>
-          <div class="align">↙</div>
-          <div class="align">↓</div>
-          <div class="align">↘</div>
-        </div>
-
-        <div class="inputs">
-          <div class="input"><span class="label">X</span><strong>20</strong></div>
-          <div class="input"><span class="label">Y</span><strong>869</strong></div>
-          <div class="input"><span class="label">Rotation</span><strong>0°</strong></div>
-          <div class="input"><span class="label">Flip</span><span class="tiny">—</span></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h4>Auto layout</h4>
-        <div class="controls">
-          <div class="control">↔</div>
-          <div class="control">↕</div>
-          <div class="control">☰</div>
-          <div class="control">⋯</div>
-        </div>
-
-        <div class="w-h">
-          <div class="box"><span class="label">W</span><strong>1440</strong></div>
-          <div class="box"><span class="label">H</span><strong>829</strong></div>
-        </div>
-
-        <div class="big-input">
-          <div style="display:flex;flex-direction:column">
-            <span class="tiny">Alignment</span>
-            <div style="display:flex;gap:6px;margin-top:6px"><div class="icon-btn">⤒</div><div class="icon-btn">⤓</div><div class="icon-btn">⤔</div></div>
+      <div class="frame1162-container1">
+        <div class="frame1162-frame11621">
+          <div class="frame1162-frame1159">
+            <div class="frame1162-frame1153">
+              <span class="frame1162-text10 TypographyH2-48px-Semibold">
+                <span class="frame1162-text11">Why</span>
+                <span class="frame1162-text12">Compliance Matters</span>
+                <span>for Research Analysts</span>
+              </span>
+              <span class="frame1162-text14 TypographyBody-18px-Regular">
+                In today’s regulatory environment, even a small oversight can
+                lead to penalties, reputational risks, and loss of client trust.
+                We help Research Analysts and firms navigate complex compliance
+                requirements so they can focus on delivering high-quality
+                research without worry.
+              </span>
+            </div>
+            <div class="frame1162-frame11581">
+              <div class="frame1162-group12">
+                <div class="frame1162-group22">
+                  <div class="frame1162objects">
+                    <div class="frame1162-group100">
+                      <div class="frame1162-clippathgroup1">
+                        <div
+                          class="frame1162svgid000001731409760647944975100000018330754745814"
+                        >
+                          <img
+                            src="public/vector3632-kw1o.svg"
+                            alt="Vector3632"
+                            class="frame1162-vector100"
+                          />
+                        </div>
+                        <div class="frame1162-group101">
+                          <div class="frame1162-group102">
+                            <div class="frame1162-group103">
+                              <img
+                                src="public/vector3633-x2i8.svg"
+                                alt="Vector3633"
+                                class="frame1162-vector101"
+                              />
+                              <div class="frame1162-group104">
+                                <img
+                                  src="public/vector3633-kpa.svg"
+                                  alt="Vector3633"
+                                  class="frame1162-vector102"
+                                />
+                                <span class="frame1162-text15">50 / 100</span>
+                              </div>
+                            </div>
+                            <div class="frame1162-group105">
+                              <div class="frame1162-group106">
+                                <img
+                                  src="public/vector3634-n489.svg"
+                                  alt="Vector3634"
+                                  class="frame1162-vector103"
+                                />
+                                <img
+                                  src="public/vector3634-a409.svg"
+                                  alt="Vector3634"
+                                  class="frame1162-vector104"
+                                />
+                                <img
+                                  src="public/vector3634-bnd7.svg"
+                                  alt="Vector3634"
+                                  class="frame1162-vector105"
+                                />
+                                <img
+                                  src="public/vector3634-kp8e.svg"
+                                  alt="Vector3634"
+                                  class="frame1162-vector106"
+                                />
+                              </div>
+                              <img
+                                src="public/vector3634-rp2.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector107"
+                              />
+                              <img
+                                src="public/vector3634-i7vn.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector108"
+                              />
+                              <img
+                                src="public/vector3634-j2n.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector109"
+                              />
+                              <img
+                                src="public/vector3634-asih.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector110"
+                              />
+                              <img
+                                src="public/vector3634-t43.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector111"
+                              />
+                              <img
+                                src="public/vector3634-xsf.svg"
+                                alt="Vector3634"
+                                class="frame1162-vector112"
+                              />
+                              <img
+                                src="public/vector3635-r1fj.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector113"
+                              />
+                              <img
+                                src="public/vector3635-52cr.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector114"
+                              />
+                              <img
+                                src="public/vector3635-dveb.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector115"
+                              />
+                              <img
+                                src="public/vector3635-lcd.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector116"
+                              />
+                              <img
+                                src="public/vector3635-km5.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector117"
+                              />
+                              <img
+                                src="public/vector3635-pml.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector118"
+                              />
+                              <img
+                                src="public/vector3635-7tsv.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector119"
+                              />
+                              <img
+                                src="public/vector3635-3av.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector120"
+                              />
+                              <img
+                                src="public/vector3635-nadn.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector121"
+                              />
+                              <img
+                                src="public/vector3635-bjy9.svg"
+                                alt="Vector3635"
+                                class="frame1162-vector122"
+                              />
+                              <img
+                                src="public/vector3636-kg7n.svg"
+                                alt="Vector3636"
+                                class="frame1162-vector123"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frame1162-clippathgroup2">
+                        <div class="frame1162-group107">
+                          <div class="frame1162-group108">
+                            <div class="frame1162-group109">
+                              <img
+                                src="public/vector3636-t4z4.svg"
+                                alt="Vector3636"
+                                class="frame1162-vector124"
+                              />
+                            </div>
+                            <div class="frame1162-group110">
+                              <div class="frame1162-group111">
+                                <img
+                                  src="public/vector3636-r4yn.svg"
+                                  alt="Vector3636"
+                                  class="frame1162-vector125"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group112">
+                              <img
+                                src="public/vector3637-vbp.svg"
+                                alt="Vector3637"
+                                class="frame1162-vector126"
+                              />
+                            </div>
+                          </div>
+                          <div class="frame1162-group113">
+                            <img
+                              src="public/vector3637-nro.svg"
+                              alt="Vector3637"
+                              class="frame1162-vector127"
+                            />
+                          </div>
+                          <div class="frame1162-group114">
+                            <img
+                              src="public/vector3637-3bj6.svg"
+                              alt="Vector3637"
+                              class="frame1162-vector128"
+                            />
+                          </div>
+                          <div class="frame1162-group115">
+                            <div class="frame1162-group116">
+                              <img
+                                src="public/vector3637-2ktl.svg"
+                                alt="Vector3637"
+                                class="frame1162-vector129"
+                              />
+                            </div>
+                            <div class="frame1162-group117">
+                              <img
+                                src="public/vector3637-bvja.svg"
+                                alt="Vector3637"
+                                class="frame1162-vector130"
+                              />
+                            </div>
+                            <div class="frame1162-group118">
+                              <div class="frame1162-group119">
+                                <img
+                                  src="public/vector3638-603s.svg"
+                                  alt="Vector3638"
+                                  class="frame1162-vector131"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group120">
+                              <div class="frame1162-group121">
+                                <img
+                                  src="public/vector3638-opfd.svg"
+                                  alt="Vector3638"
+                                  class="frame1162-vector132"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group122">
+                              <div class="frame1162-group123">
+                                <img
+                                  src="public/vector3638-sr9d.svg"
+                                  alt="Vector3638"
+                                  class="frame1162-vector133"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group124">
+                              <div class="frame1162-group125">
+                                <img
+                                  src="public/vector3639-bn4.svg"
+                                  alt="Vector3639"
+                                  class="frame1162-vector134"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group126">
+                              <div class="frame1162-group127">
+                                <img
+                                  src="public/vector3639-28gk.svg"
+                                  alt="Vector3639"
+                                  class="frame1162-vector135"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="frame1162-group128">
+                            <div class="frame1162-group129">
+                              <img
+                                src="public/vector3639-qlpr.svg"
+                                alt="Vector3639"
+                                class="frame1162-vector136"
+                              />
+                            </div>
+                            <div class="frame1162-group130">
+                              <div class="frame1162-group131">
+                                <img
+                                  src="public/vector3640-5567.svg"
+                                  alt="Vector3640"
+                                  class="frame1162-vector137"
+                                />
+                              </div>
+                              <div class="frame1162-group132">
+                                <div class="frame1162-group133">
+                                  <img
+                                    src="public/vector3640-5lc.svg"
+                                    alt="Vector3640"
+                                    class="frame1162-vector138"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group134">
+                                <div class="frame1162-group135">
+                                  <img
+                                    src="public/vector3640-wvei.svg"
+                                    alt="Vector3640"
+                                    class="frame1162-vector139"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group136">
+                                <div class="frame1162-group137">
+                                  <img
+                                    src="public/vector3640-j9qi.svg"
+                                    alt="Vector3640"
+                                    class="frame1162-vector140"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group138">
+                                <div class="frame1162-group139">
+                                  <img
+                                    src="public/vector3641-f18.svg"
+                                    alt="Vector3641"
+                                    class="frame1162-vector141"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group140">
+                                <div class="frame1162-group141">
+                                  <img
+                                    src="public/vector3641-42vs.svg"
+                                    alt="Vector3641"
+                                    class="frame1162-vector142"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group142">
+                                <img
+                                  src="public/vector3641-7kljp.svg"
+                                  alt="Vector3641"
+                                  class="frame1162-vector143"
+                                />
+                              </div>
+                              <div class="frame1162-group143">
+                                <img
+                                  src="public/vector3641-eg3o.svg"
+                                  alt="Vector3641"
+                                  class="frame1162-vector144"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group144">
+                              <img
+                                src="public/vector3642-aaj9.svg"
+                                alt="Vector3642"
+                                class="frame1162-vector145"
+                              />
+                            </div>
+                            <div class="frame1162-group145">
+                              <div class="frame1162-group146">
+                                <img
+                                  src="public/vector3642-9um.svg"
+                                  alt="Vector3642"
+                                  class="frame1162-vector146"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="frame1162-group147">
+                            <div class="frame1162-group148">
+                              <div class="frame1162-group149">
+                                <div class="frame1162-group150">
+                                  <img
+                                    src="public/vector3642-iz65.svg"
+                                    alt="Vector3642"
+                                    class="frame1162-vector147"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group151">
+                                <div class="frame1162-group152">
+                                  <img
+                                    src="public/vector3643-r8mm.svg"
+                                    alt="Vector3643"
+                                    class="frame1162-vector148"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="frame1162-group153">
+                              <div class="frame1162-group154">
+                                <img
+                                  src="public/vector3643-dw4.svg"
+                                  alt="Vector3643"
+                                  class="frame1162-vector149"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group155">
+                              <div class="frame1162-group156">
+                                <img
+                                  src="public/vector3643-gzm.svg"
+                                  alt="Vector3643"
+                                  class="frame1162-vector150"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group157">
+                              <div class="frame1162-group158">
+                                <img
+                                  src="public/vector3644-4e5r.svg"
+                                  alt="Vector3644"
+                                  class="frame1162-vector151"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group159">
+                              <div class="frame1162-group160">
+                                <img
+                                  src="public/vector3644-2f0c.svg"
+                                  alt="Vector3644"
+                                  class="frame1162-vector152"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group161">
+                              <img
+                                src="public/vector3644-mmxc.svg"
+                                alt="Vector3644"
+                                class="frame1162-vector153"
+                              />
+                            </div>
+                            <div class="frame1162-group162">
+                              <div class="frame1162-group163">
+                                <div class="frame1162-group164">
+                                  <img
+                                    src="public/vector3645-r2p.svg"
+                                    alt="Vector3645"
+                                    class="frame1162-vector154"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="frame1162-group165">
+                              <div class="frame1162-group166">
+                                <img
+                                  src="public/vector3645-m8c.svg"
+                                  alt="Vector3645"
+                                  class="frame1162-vector155"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group167">
+                              <div class="frame1162-group168">
+                                <img
+                                  src="public/vector3645-ffjp.svg"
+                                  alt="Vector3645"
+                                  class="frame1162-vector156"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group169">
+                              <div class="frame1162-group170">
+                                <div class="frame1162-group171">
+                                  <img
+                                    src="public/vector3646-psmn.svg"
+                                    alt="Vector3646"
+                                    class="frame1162-vector157"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="frame1162-group172">
+                              <div class="frame1162-group173">
+                                <div class="frame1162-group174">
+                                  <img
+                                    src="public/vector3646-ghx9.svg"
+                                    alt="Vector3646"
+                                    class="frame1162-vector158"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="frame1162-group175">
+                              <div class="frame1162-group176">
+                                <div class="frame1162-group177">
+                                  <div class="frame1162-group178">
+                                    <img
+                                      src="public/vector3646-ms7l.svg"
+                                      alt="Vector3646"
+                                      class="frame1162-vector159"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame1162-group179">
+                                <div class="frame1162-group180">
+                                  <img
+                                    src="public/vector3647-sw29.svg"
+                                    alt="Vector3647"
+                                    class="frame1162-vector160"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group181">
+                                <div class="frame1162-group182">
+                                  <div class="frame1162-group183">
+                                    <div class="frame1162-group184">
+                                      <img
+                                        src="public/vector3647-z2xv.svg"
+                                        alt="Vector3647"
+                                        class="frame1162-vector161"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="frame1162-group185">
+                              <div class="frame1162-group186">
+                                <div class="frame1162-group187">
+                                  <img
+                                    src="public/vector3648-hun.svg"
+                                    alt="Vector3648"
+                                    class="frame1162-vector162"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group188">
+                                <div class="frame1162-group189">
+                                  <img
+                                    src="public/vector3648-9ouq.svg"
+                                    alt="Vector3648"
+                                    class="frame1162-vector163"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group190">
+                                <div class="frame1162-group191">
+                                  <div class="frame1162-group192">
+                                    <img
+                                      src="public/vector3648-yqw.svg"
+                                      alt="Vector3648"
+                                      class="frame1162-vector164"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame1162-group193">
+                                <div class="frame1162-group194">
+                                  <div class="frame1162-group195">
+                                    <img
+                                      src="public/vector3649-blov.svg"
+                                      alt="Vector3649"
+                                      class="frame1162-vector165"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame1162-group196">
+                                <div class="frame1162-group197">
+                                  <div class="frame1162-group198">
+                                    <img
+                                      src="public/vector3649-jhyg.svg"
+                                      alt="Vector3649"
+                                      class="frame1162-vector166"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="frame1162-group199">
+                            <div class="frame1162-group200">
+                              <img
+                                src="public/vector3649-tgow.svg"
+                                alt="Vector3649"
+                                class="frame1162-vector167"
+                              />
+                            </div>
+                            <div class="frame1162-group201">
+                              <div class="frame1162-group202">
+                                <img
+                                  src="public/vector3650-5ieq.svg"
+                                  alt="Vector3650"
+                                  class="frame1162-vector168"
+                                />
+                              </div>
+                              <div class="frame1162-group203">
+                                <div class="frame1162-group204">
+                                  <img
+                                    src="public/vector3650-602.svg"
+                                    alt="Vector3650"
+                                    class="frame1162-vector169"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group205">
+                                <div class="frame1162-group206">
+                                  <img
+                                    src="public/vector3650-a7i.svg"
+                                    alt="Vector3650"
+                                    class="frame1162-vector170"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group207">
+                                <div class="frame1162-group208">
+                                  <img
+                                    src="public/vector3651-o56k.svg"
+                                    alt="Vector3651"
+                                    class="frame1162-vector171"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group209">
+                                <div class="frame1162-group210">
+                                  <img
+                                    src="public/vector3651-v6h.svg"
+                                    alt="Vector3651"
+                                    class="frame1162-vector172"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group211">
+                                <div class="frame1162-group212">
+                                  <img
+                                    src="public/vector3651-0sdi.svg"
+                                    alt="Vector3651"
+                                    class="frame1162-vector173"
+                                  />
+                                </div>
+                              </div>
+                              <div class="frame1162-group213">
+                                <img
+                                  src="public/vector3651-mzn.svg"
+                                  alt="Vector3651"
+                                  class="frame1162-vector174"
+                                />
+                              </div>
+                              <div class="frame1162-group214">
+                                <img
+                                  src="public/vector3652-bp4.svg"
+                                  alt="Vector3652"
+                                  class="frame1162-vector175"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group215">
+                              <img
+                                src="public/vector3652-9sy.svg"
+                                alt="Vector3652"
+                                class="frame1162-vector176"
+                              />
+                            </div>
+                            <div class="frame1162-group216">
+                              <div class="frame1162-group217">
+                                <img
+                                  src="public/vector3652-8xt6.svg"
+                                  alt="Vector3652"
+                                  class="frame1162-vector177"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group218">
+                              <div class="frame1162-group219">
+                                <img
+                                  src="public/vector3652-uspu.svg"
+                                  alt="Vector3652"
+                                  class="frame1162-vector178"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group220">
+                              <div class="frame1162-group221">
+                                <img
+                                  src="public/vector3653-8cpg.svg"
+                                  alt="Vector3653"
+                                  class="frame1162-vector179"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="frame1162-group222">
+                            <div class="frame1162-group223">
+                              <img
+                                src="public/vector3653-zc3.svg"
+                                alt="Vector3653"
+                                class="frame1162-vector180"
+                              />
+                            </div>
+                          </div>
+                          <div class="frame1162-group224">
+                            <div class="frame1162-group225">
+                              <img
+                                src="public/vector3653-ah5j.svg"
+                                alt="Vector3653"
+                                class="frame1162-vector181"
+                              />
+                            </div>
+                          </div>
+                          <div class="frame1162-group226">
+                            <div class="frame1162-group227">
+                              <img
+                                src="public/vector3654-qvx.svg"
+                                alt="Vector3654"
+                                class="frame1162-vector182"
+                              />
+                            </div>
+                            <div class="frame1162-group228">
+                              <div class="frame1162-group229">
+                                <img
+                                  src="public/vector3654-zila.svg"
+                                  alt="Vector3654"
+                                  class="frame1162-vector183"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group230">
+                              <div class="frame1162-group231">
+                                <img
+                                  src="public/vector3654-pugx.svg"
+                                  alt="Vector3654"
+                                  class="frame1162-vector184"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group232">
+                              <div class="frame1162-group233">
+                                <img
+                                  src="public/vector3655-e6wt.svg"
+                                  alt="Vector3655"
+                                  class="frame1162-vector185"
+                                />
+                              </div>
+                            </div>
+                            <div class="frame1162-group234">
+                              <div class="frame1162-group235">
+                                <img
+                                  src="public/vector3655-55n.svg"
+                                  alt="Vector3655"
+                                  class="frame1162-vector186"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="frame1162-group236">
+                            <div class="frame1162-group237">
+                              <img
+                                src="public/vector3655-ly7.svg"
+                                alt="Vector3655"
+                                class="frame1162-vector187"
+                              />
+                            </div>
+                            <div class="frame1162-group238">
+                              <div class="frame1162-group239">
+                                <img
+                                  src="public/vector3655-k6i.svg"
+                                  alt="Vector3655"
+                                  class="frame1162-vector188"
+                                />
+                              </div>
+                              <div class="frame1162-group240">
+                                <img
+                                  src="public/vector3656-6kp.svg"
+                                  alt="Vector3656"
+                                  class="frame1162-vector189"
+                                />
+                              </div>
+                              <div class="frame1162-group241">
+                                <img
+                                  src="public/vector3656-ppl.svg"
+                                  alt="Vector3656"
+                                  class="frame1162-vector190"
+                                />
+                              </div>
+                              <div class="frame1162-group242">
+                                <div class="frame1162-group243">
+                                  <img
+                                    src="public/vector3656-y6ae.svg"
+                                    alt="Vector3656"
+                                    class="frame1162-vector191"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame1162-group244">
+                    <div class="frame1162-group245">
+                      <img
+                        src="public/vector3656-h3z.svg"
+                        alt="Vector3656"
+                        class="frame1162-vector192"
+                      />
+                      <img
+                        src="public/vector3657-wlr.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector193"
+                      />
+                      <img
+                        src="public/vector3657-ljv5.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector194"
+                      />
+                      <img
+                        src="public/vector3657-ay2u.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector195"
+                      />
+                      <img
+                        src="public/vector3657-izq.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector196"
+                      />
+                    </div>
+                    <div class="frame1162-group246">
+                      <img
+                        src="public/vector3657-415s.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector197"
+                      />
+                      <img
+                        src="public/vector3657-adk.svg"
+                        alt="Vector3657"
+                        class="frame1162-vector198"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame1162-frame11571">
+                <div class="frame1162-frame1154">
+                  <div class="frame1162-frame11622">
+                    <div class="frame1162-maskgroup1">
+                      <img
+                        src="public/search13658-7xsg-200h.png"
+                        alt="search13658"
+                        class="frame1162-search1"
+                      />
+                    </div>
+                    <div class="frame1162-frame11641">
+                      <span class="frame1162-text16">Regulatory Clarity</span>
+                      <span
+                        class="frame1162-text17 TypographyBody-18px-Regular"
+                      >
+                        <span>
+                          We decode complex compliance rules into simple,
+                          actionable steps.
+                        </span>
+                        <br />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame1162-frame11572">
+                  <div class="frame1162-frame11623">
+                    <div class="frame1162-maskgroup2">
+                      <img
+                        src="public/clarity13658-20o8-200h.png"
+                        alt="clarity13658"
+                        class="frame1162-clarity1"
+                      />
+                    </div>
+                    <div class="frame1162-frame11642">
+                      <span class="frame1162-text20">
+                        Hassle-Free Filings Clarity
+                      </span>
+                      <span
+                        class="frame1162-text21 TypographyBody-18px-Regular"
+                      >
+                        <span>
+                          From registration to ongoing reporting—we manage it
+                          end-to-end.
+                        </span>
+                        <br />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame1162-frame11582">
+                  <div class="frame1162-frame11624">
+                    <div class="frame1162-maskgroup3">
+                      <img
+                        src="public/risk113659-mvj-200h.png"
+                        alt="risk113659"
+                        class="frame1162-risk11"
+                      />
+                    </div>
+                    <div class="frame1162-frame11643">
+                      <span class="frame1162-text24">Risk Protection</span>
+                      <span
+                        class="frame1162-text25 TypographyBody-18px-Regular"
+                      >
+                        <span>
+                          Stay ahead of audits, inspections, and compliance gaps
+                          with proactive&nbsp;support.
+                        </span>
+                        <br />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="public/path206053660-u2jl.svg"
+              alt="path206053660"
+              class="frame1162-path20605"
+            />
           </div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end">
-            <span class="tiny">Padding</span>
-            <div class="tiny">0</div>
+          <div class="frame1162-group247">
+            <img
+              src="public/vector3660-om78.svg"
+              alt="Vector3660"
+              class="frame1162-vector199"
+            />
+            <img
+              src="public/vector3660-c9dd.svg"
+              alt="Vector3660"
+              class="frame1162-vector200"
+            />
+            <img
+              src="public/vector3660-lvb.svg"
+              alt="Vector3660"
+              class="frame1162-vector201"
+            />
+            <img
+              src="public/vector3660-m079.svg"
+              alt="Vector3660"
+              class="frame1162-vector202"
+            />
+            <img
+              src="public/vector3660-085.svg"
+              alt="Vector3660"
+              class="frame1162-vector203"
+            />
+            <img
+              src="public/vector3660-f2xh.svg"
+              alt="Vector3660"
+              class="frame1162-vector204"
+            />
           </div>
         </div>
+        <a href="https://play.teleporthq.io/signup" class="frame1162-link">
+          <div aria-label="Sign up to TeleportHQ" class="frame1162-container2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="frame1162-icon1"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="frame1162-text28">Built in TeleportHQ</span>
+          </div>
+        </a>
       </div>
-
-      <div class="section appearance">
-        <h4>Appearance</h4>
-        <div class="row">
-          <div class="eye"><span class="icon-btn">👁</span><span class="tiny">100%</span></div>
-          <div class="muted">0</div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="tiny">Fill</div>
-        <div style="height:36px;margin-top:8px;background:linear-gradient(90deg,#4050ff,#12c2e9);border-radius:6px"></div>
-
-        <div style="margin-top:10px;" class="tiny">Stroke</div>
-        <div style="height:36px;margin-top:8px;background:transparent;border:1px dashed rgba(255,255,255,0.03);border-radius:6px"></div>
-      </div>
-
-    </aside>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
+

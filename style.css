@@ -85,7 +85,7 @@ body {
     margin: 0 auto;
     padding: 60px 80px; 
     gap: 80px; 
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-content {
@@ -189,7 +189,7 @@ body {
     margin: 0 auto;
     padding: 60px 80px; 
     gap: 80px; 
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* Left Column: Image */
@@ -217,9 +217,99 @@ body {
     font-weight: 700;
     margin-bottom: 25px;
     color: var(--text-dark);
-    line-height: 1.2; /* balanced spacing between the 2 lines */
-    letter-spacing: 0.5px; /* optional for readability */
-    word-break: keep-all; /* prevent awkward wrapping */
+    line-height: 1.2; 
+    letter-spacing: 0.5px; 
+    word-break: keep-all; 
 }
 
+/* Right column for the "Why Compliance Matters" section */
+.desktop-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
+/* Decorative vector images inside the desktop section */
+.desktop { position: relative; }
+
+/* Anchor Vector1 inside the left column (heading area) */
+.desktop-content { position: relative; }
+.vector1 {
+    /* anchor Vector1 to the desktop container bottom-left */
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    width: 120px;
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 8;
+}
+
+.vector2 {
+    /* place Vector2 near the heading inside the left column */
+    position: absolute;
+    right: 10px; /* sit just to the right of the heading */
+    top: 80px; /* slightly above the heading baseline */
+    width: 40px;
+    transform: rotate(6deg);
+    opacity: 0.98;
+    pointer-events: none;
+    z-index: 12;
+}
+
+.desktop-intro {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: calc(18px * 3);
+    margin-top: calc(8px * 10);
+}
+
+.info-card {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 36px;
+    min-height: 120px;
+    box-shadow: 0 6px 18px rgba(34, 43, 77, 0.06);
+    border: 1px solid rgba(34, 43, 77, 0.04);
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(85,85,255,0.12), rgba(85,85,255,0.06));
+    color: var(--primary-blue);
+    font-size: 22px;
+}
+
+.icon-box img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.card-body h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.card-body p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin: 0;
+}

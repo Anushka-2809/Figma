@@ -59,27 +59,56 @@
     </main>
 
     <main class="desktop">
+        <!-- decorative vector (Vector2 stays in desktop container) -->
+        <img src="./assets/Vector1.png" alt="decorative" class="vector1" />
         <!-- Left box -->
         <div class="desktop-content">
+            <!-- place Vector1 inside desktop-content so it anchors to the heading -->
+            <img src="./assets/Vector2.png" alt="decorative" class="vector2" />
             <h1>
-                Why Compliance Matters <br>For Research Analysts.
+                Why <span id="Compliance">Compliance Matters</span>
+                <br>For Research Analysts
             </h1>
+
             <div class="hero-image-and-stats-2">
-                <img src="./assets/Section2-Image.png" alt="">
+                <img src="./assets/Section2-Image.png" alt="Illustration">
             </div>
         </div>
 
-
-        </div>
-
-        <!-- Right Box -->
-        <div class="main text">
-            <p class="sub text">
+        <!-- Right Box: description + stacked info cards -->
+        <aside class="desktop-right">
+            <p class="desktop-intro">
                 In today’s regulatory environment, even a small oversight can lead to penalties, reputational risks, and
                 loss of client trust. We help Research Analysts and firms navigate complex compliance requirements so
                 they can focus on delivering high-quality research without worry.
             </p>
-        </div>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon-box"><img src="./assets/Regulatory Clarity.png" alt="Regulatory"/></div>
+                    <div class="card-body">
+                        <h3>Regulatory Clarity</h3>
+                        <p>We decode complex compliance rules into simple, actionable steps.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box"><img src="./assets/Hassle-Free Filings Clarity.png" alt="Filings"/></div>
+                    <div class="card-body">
+                        <h3>Hassle-Free Filings Clarity</h3>
+                        <p>From registration to ongoing reporting—we manage it end-to-end.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box"><img src="./assets/Risk Protection.png" alt="Risk"/></div>
+                    <div class="card-body">
+                        <h3>Risk Protection</h3>
+                        <p>Stay ahead of audits, inspections, and compliance gaps with proactive support.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
     </main>
 </body>

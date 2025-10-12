@@ -27,6 +27,8 @@
             <img src="./assets/Contact-icon.png" alt="">
             <span class="btn-icon"></span> Contact Us
         </button>
+        <!-- Hamburger for mobile -->
+        <button class="hamburger" aria-label="Open menu">☰</button>
     </header>
 
     <!-- Hero Section -->
@@ -57,6 +59,51 @@
         </div>
 
     </main>
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <div class="logo-container"><img src="./assets/Logo.png" alt="Logo"></div>
+            <button class="mobile-close" id="mobileClose">✕</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#home"><img src="./assets/Home.png" alt=""> Home</a>
+            <a href="#about"><img src="./assets/AboutUs.png" alt=""> About Us</a>
+            <a href="#services"><img src="./assets/Our Services.png" alt=""> Our Services</a>
+            <a href="#pricing"><img src="./assets/Pricing.png" alt=""> Pricing</a>
+            <a href="#faq"><img src="./assets/FAQ.png" alt=""> FAQ</a>
+            <a href="#contact"><img src="./assets/Contact.png" alt=""> Contact</a>
+        </nav>
+        <div class="mobile-nav-cta">
+            <button class="btn primary-btn">Contact Us</button>
+        </div>
+    </aside>
+
+    <script>
+        // Mobile nav toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileNavOverlay');
+        const mobileClose = document.getElementById('mobileClose');
+
+        function openMobileNav(){
+            mobileNav.classList.add('open');
+            mobileOverlay.classList.add('open');
+            mobileNav.setAttribute('aria-hidden', 'false');
+            mobileOverlay.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeMobileNav(){
+            mobileNav.classList.remove('open');
+            mobileOverlay.classList.remove('open');
+            mobileNav.setAttribute('aria-hidden', 'true');
+            mobileOverlay.setAttribute('aria-hidden', 'true');
+        }
+
+        hamburger && hamburger.addEventListener('click', openMobileNav);
+        mobileClose && mobileClose.addEventListener('click', closeMobileNav);
+        mobileOverlay && mobileOverlay.addEventListener('click', closeMobileNav);
+    </script>
 
     <main class="desktop">
         <!-- decorative vector (Vector2 stays in desktop container) -->

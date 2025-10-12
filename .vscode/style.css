@@ -1,141 +1,648 @@
-<div style="width: 1240px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: inline-flex">
-  <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 33px; display: inline-flex">
-    <div style="flex: 1 1 0; justify-content: center; display: flex; flex-direction: column"><span style="color: black; font-size: 48px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 70px; word-wrap: break-word">Why </span><span style="color: #4356D6; font-size: 48px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 70px; word-wrap: break-word">Compliance Matters </span><span style="color: black; font-size: 48px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 70px; word-wrap: break-word">for Research Analysts</span></div>
-    <div style="flex: 1 1 0; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; text-transform: capitalize; line-height: 32px; word-wrap: break-word">In today’s regulatory environment, even a small oversight can lead to penalties, reputational risks, and loss of client trust. We help Research Analysts and firms navigate complex compliance requirements so they can focus on delivering high-quality research without worry.</div>
-  </div>
-  <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 52px; display: inline-flex">
-    <div style="width: 594px; height: 594px; background: black"></div>
-    <div style="width: 377.93px; height: 281.10px; background: #1574DD"></div>
-    <div style="width: 377.93px; height: 281.10px; background: #FCFBFF"></div>
-    <div style="width: 71.28px; height: 27.32px; color: #3B3DBA; font-size: 15.25px; font-family: Poppins; font-weight: 600; word-wrap: break-word">50 / 100</div>
-    <div style="width: 377.93px; height: 281.10px"></div>
-    <div style="width: 39.26px; height: 61.45px; transform: rotate(-180deg); transform-origin: top left; background: #3B3DBA"></div>
-    <div style="width: 39.26px; height: 91.10px; transform: rotate(-180deg); transform-origin: top left; background: #3B3DBA"></div>
-    <div style="width: 39.26px; height: 79.12px; transform: rotate(-180deg); transform-origin: top left; background: #1574DD"></div>
-    <div style="width: 37.74px; height: 41.68px; background: #1574DD"></div>
-    <div style="width: 84.25px; height: 84.25px; background: #3B3DBA"></div>
-    <div style="width: 41.23px; height: 6.34px; background: #1574DD"></div>
-    <div style="width: 65.40px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 65.40px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 41.23px; height: 6.34px; background: #1574DD"></div>
-    <div style="width: 65.40px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 41.23px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 41.23px; height: 6.34px; background: #1574DD"></div>
-    <div style="width: 65.40px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 41.23px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 23.61px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 37.45px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 23.61px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 37.45px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 23.61px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 37.45px; height: 6.34px; background: #3B3DBA"></div>
-    <div style="width: 200.02px; height: 158.41px; background: #999997"></div>
-    <div style="width: 23.38px; height: 131.17px; background: #4B4B4B"></div>
-    <div style="width: 110.44px; height: 63.19px; background: #4B4B4B"></div>
-    <div style="width: 71.56px; height: 113.92px; background: #00184C"></div>
-    <div style="width: 21.62px; height: 20.40px; background: #00184C"></div>
-    <div style="width: 75.09px; height: 114.88px; background: #1574DD"></div>
-    <div style="width: 15.14px; height: 31.74px; background: #1574DD"></div>
-    <div style="width: 50.68px; height: 16.13px; background: #0559B5"></div>
-    <div style="width: 44.67px; height: 6.25px; background: #0559B5"></div>
-    <div style="width: 36.83px; height: 3.86px; background: #0559B5"></div>
-    <div style="width: 17.50px; height: 82.51px; background: #0559B5"></div>
-    <div style="width: 31.24px; height: 15.71px; background: #0559B5"></div>
-    <div style="width: 28.12px; height: 25.57px; background: #FFA189"></div>
-    <div style="width: 52.11px; height: 33.06px; background: #00184C"></div>
-    <div style="width: 17.87px; height: 5.58px; background: white"></div>
-    <div style="width: 2.64px; height: 3.98px; background: white"></div>
-    <div style="width: 2.64px; height: 3.98px; background: white"></div>
-    <div style="width: 2.64px; height: 3.98px; background: white"></div>
-    <div style="width: 2.64px; height: 3.98px; background: white"></div>
-    <div style="width: 13.95px; height: 9.48px; background: white"></div>
-    <div style="width: 43.26px; height: 30.04px; background: #00184C"></div>
-    <div style="width: 175.44px; height: 124.33px; background: #00184C"></div>
-    <div style="width: 66.40px; height: 70.53px; background: #5254CF"></div>
-    <div style="width: 19.97px; height: 28.99px; background: #FFA189"></div>
-    <div style="width: 12.45px; height: 12.67px; background: #00184C"></div>
-    <div style="width: 32.77px; height: 38.62px; background: #FFA189"></div>
-    <div style="width: 6.51px; height: 3.41px; background: #00184C"></div>
-    <div style="width: 1.82px; height: 2.43px; background: #00184C"></div>
-    <div style="width: 1.82px; height: 2.43px; background: #00184C"></div>
-    <div style="width: 37.96px; height: 23.53px; background: #00184C"></div>
-    <div style="width: 3.22px; height: 1.39px; background: #E87E64"></div>
-    <div style="width: 4.93px; height: 2.58px; background: #E87E64"></div>
-    <div style="width: 4.09px; height: 2.57px; background: #E87E64"></div>
-    <div style="width: 5.44px; height: 3.25px; background: #00184C"></div>
-    <div style="width: 5.04px; height: 3.81px; background: #00184C"></div>
-    <div style="width: 10.39px; height: 13.03px; background: #FFA189"></div>
-    <div style="width: 8.56px; height: 8.56px; background: white"></div>
-    <div style="width: 4.32px; height: 7.30px; background: #00184C"></div>
-    <div style="width: 8.92px; height: 10.24px; background: white"></div>
-    <div style="width: 8.92px; height: 10.24px; background: white"></div>
-    <div style="width: 2.58px; height: 4.96px; background: #00184C"></div>
-    <div style="width: 2.36px; height: 1.08px; background: white"></div>
-    <div style="width: 6.83px; height: 3.76px; background: white"></div>
-    <div style="width: 16.37px; height: 28.89px; background: #FFA189"></div>
-    <div style="width: 49.73px; height: 24.06px; background: #00184C"></div>
-    <div style="width: 12.74px; height: 13.88px; background: white"></div>
-    <div style="width: 4.06px; height: 2.58px; background: white"></div>
-    <div style="width: 4.06px; height: 2.58px; background: white"></div>
-    <div style="width: 4.06px; height: 2.58px; background: white"></div>
-    <div style="width: 4.06px; height: 2.58px; background: white"></div>
-    <div style="width: 12.37px; height: 9.22px; background: white"></div>
-    <div style="width: 49.72px; height: 3.36px; background: #00184C"></div>
-    <div style="width: 122.17px; height: 116.21px; background: #00184C"></div>
-    <div style="width: 92.16px; height: 67.69px; background: #5254CF"></div>
-    <div style="width: 26.72px; height: 23.51px; background: #5254CF"></div>
-    <div style="width: 7.77px; height: 49.77px; background: #5254CF"></div>
-    <div style="width: 20.92px; height: 15.02px; background: #5254CF"></div>
-    <div style="width: 26.13px; height: 3.26px; background: #5254CF"></div>
-    <div style="width: 67.60px; height: 57.98px; background: #FFA189"></div>
-    <div style="width: 7.36px; height: 3.19px; background: #E87E64"></div>
-    <div style="width: 7.03px; height: 2.64px; background: #E87E64"></div>
-    <div style="width: 30.10px; height: 37.38px; background: #1574DD"></div>
-    <div style="width: 3.15px; height: 25.25px; background: #0559B5"></div>
-    <div style="width: 99.85px; height: 18.32px; background: #3B3DBA"></div>
-    <div style="width: 71.94px; height: 59.64px; background: #3B3DBA"></div>
-    <div style="width: 71.94px; height: 59.64px; background: #3B3DBA"></div>
-    <div style="width: 11.77px; height: 13.48px; background: #5254CF"></div>
-    <div style="width: 8.11px; height: 47.11px; background: #5254CF"></div>
-    <div style="width: 54.53px; height: 84.72px; background: #4356D6"></div>
-    <div style="width: 43.84px; height: 85.01px; background: #4356D6"></div>
-    <div style="width: 61.55px; height: 50.32px; background: #B2C0FE"></div>
-    <div style="width: 22.64px; height: 83.16px; background: #B2C0FE"></div>
-    <div style="width: 42.39px; height: 49.90px; background: #B2C0FE"></div>
-    <div style="width: 70.65px; height: 41.54px; background: white"></div>
-    <div style="width: 71.75px; height: 42.44px; background: #4356D6"></div>
-    <div style="flex: 1 1 0; align-self: stretch; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
-      <div style="align-self: stretch; padding: 20px; background: #FAFBFF; border-radius: 8px; outline: 1px #E2E7FF solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: flex">
-        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
-          <img style="width: 36px; height: 36px" src="https://placehold.co/36x36" />
-          <div style="width: 36px; height: 36px; background: #4356D6"></div>
-          <div style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-            <div style="color: black; font-size: 24px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 32px; word-wrap: break-word">Regulatory Clarity</div>
-            <div style="align-self: stretch; height: 59px; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; text-transform: capitalize; line-height: 32px; word-wrap: break-word">We decode complex compliance rules into simple, actionable steps.<br/></div>
-          </div>
-        </div>
-      </div>
-      <div style="align-self: stretch; padding: 20px; background: #FAFBFF; border-radius: 8px; outline: 1px #E2E7FF solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: flex">
-        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
-          <img style="width: 36px; height: 36px" src="https://placehold.co/36x36" />
-          <div style="width: 36px; height: 36px; background: #4356D6"></div>
-          <div style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-            <div style="color: black; font-size: 24px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 32px; word-wrap: break-word">Hassle-Free Filings Clarity</div>
-            <div style="align-self: stretch; height: 59px; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; text-transform: capitalize; line-height: 32px; word-wrap: break-word">From registration to ongoing reporting—we manage it end-to-end.<br/></div>
-          </div>
-        </div>
-      </div>
-      <div style="align-self: stretch; padding: 20px; background: #FAFBFF; border-radius: 8px; outline: 1px #E2E7FF solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: flex">
-        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
-          <img style="width: 36px; height: 36px" src="https://placehold.co/36x36" />
-          <div style="width: 36px; height: 36px; background: #4356D6"></div>
-          <div style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-            <div style="color: black; font-size: 24px; font-family: Roboto; font-weight: 600; text-transform: capitalize; line-height: 32px; word-wrap: break-word">Risk Protection</div>
-            <div style="align-self: stretch; height: 59px; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; text-transform: capitalize; line-height: 32px; word-wrap: break-word">Stay ahead of audits, inspections, and compliance gaps with proactive support.<br/></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="width: 102.39px; height: 88.67px; left: 516.75px; top: 90.85px; position: absolute; transform: rotate(53deg); transform-origin: top left; background: #B2C0FE"></div>
-</div>
+:root {
+  --dl-layout-size-large: 144px;
+  --dl-layout-size-small: 48px;
+  --dl-layout-space-unit: 16px;
+  --dl-layout-size-medium: 96px;
+  --dl-layout-size-xlarge: 192px;
+  --dl-layout-size-xsmall: 16px;
+  --dl-color-theme-accent1: #FFFFFF;
+  --dl-color-theme-accent2: #F5D1B0;
+  --dl-layout-radius-round: 50%;
+  --dl-layout-size-xxlarge: 288px;
+  --dl-color-theme-primary1: #BF4408;
+  --dl-color-theme-primary2: #E65103;
+  --dl-layout-size-maxwidth: 1400px;
+  --dl-layout-radius-radius2: 2px;
+  --dl-layout-radius-radius4: 4px;
+  --dl-layout-radius-radius8: 8px;
+  --dl-layout-space-halfunit: 8px;
+  --dl-layout-space-sixunits: 96px;
+  --dl-layout-space-twounits: 32px;
+  --dl-color-theme-secondary1: #FFFFFF;
+  --dl-color-theme-secondary2: #FBF1EB;
+  --dl-layout-space-fiveunits: 80px;
+  --dl-layout-space-fourunits: 64px;
+  --dl-layout-space-threeunits: 48px;
+  --dl-color-theme-neutral-dark: #191818;
+  --dl-layout-radius-cardradius: 8px;
+  --dl-color-theme-neutral-light: #FBFAF9;
+  --dl-layout-radius-imageradius: 8px;
+  --dl-layout-radius-inputradius: 24px;
+  --dl-layout-radius-buttonradius: 24px;
+  --dl-layout-space-oneandhalfunits: 24px;
+}
+ 
+.button {
+  color: var(--dl-color-theme-neutral-dark);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.input {
+  color: var(--dl-color-theme-neutral-dark);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.textarea {
+  color: var(--dl-color-theme-neutral-dark);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+ 
+.list-item {
+  display: list-item;
+}
+ 
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+ 
+.thq-input {
+  color: var(--dl-color-theme-neutral-dark);
+  cursor: auto;
+  outline: none;
+  padding: 0.5rem 1rem;
+  align-self: stretch;
+  text-align: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-inputradius);
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.thq-input:focus {
+  outline: 1px solid var(--dl-color-theme-primary1);
+}
+ 
+.thq-button-filled {
+  gap: var(--dl-layout-space-halfunit);
+  fill: var(--dl-color-theme-secondary1);
+  color: var(--dl-color-theme-secondary1);
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  font-weight: bold;
+  padding-top: var(--dl-layout-space-halfunit);
+  white-space: nowrap;
+  border-color: var(--dl-color-theme-primary1);
+  border-width: 1px;
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  padding-right: var(--dl-layout-space-oneandhalfunits);
+  padding-bottom: var(--dl-layout-space-halfunit);
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+ 
+.thq-button-filled:hover {
+  fill: var(--dl-color-theme-secondary2);
+  color: var(--dl-color-theme-secondary2);
+  border-color: var(--dl-color-theme-primary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+ 
+.thq-button-outline {
+  gap: var(--dl-layout-space-halfunit);
+  fill: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-primary1);
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  font-weight: bold;
+  padding-top: var(--dl-layout-space-halfunit);
+  white-space: nowrap;
+  border-color: var(--dl-color-theme-primary1);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  padding-right: var(--dl-layout-space-oneandhalfunits);
+  padding-bottom: var(--dl-layout-space-halfunit);
+  justify-content: center;
+}
+ 
+.thq-button-outline:hover {
+  fill: var(--dl-color-theme-secondary2);
+  color: var(--dl-color-theme-secondary2);
+  border-color: var(--dl-color-theme-primary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+ 
+.thq-button-flat {
+  gap: var(--dl-layout-space-halfunit);
+  fill: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-primary1);
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  font-weight: bold;
+  padding-top: var(--dl-layout-space-halfunit);
+  white-space: nowrap;
+  border-color: transparent;
+  border-width: 1px;
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  padding-right: var(--dl-layout-space-oneandhalfunits);
+  padding-bottom: var(--dl-layout-space-halfunit);
+  justify-content: center;
+}
+ 
+.thq-button-flat:hover {
+  fill: var(--dl-color-theme-secondary1);
+  color: var(--dl-color-theme-secondary1);
+  border-color: var(--dl-color-theme-primary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+ 
+.thq-heading-1 {
+  font-size: 48px;
+  font-family: STIX Two Text;
+  font-weight: 700;
+  line-height: 1.5;
+}
+ 
+.thq-heading-2 {
+  font-size: 35px;
+  font-family: STIX Two Text;
+  font-weight: 600;
+  line-height: 1.5;
+}
+ 
+.thq-heading-3 {
+  font-size: 26px;
+  font-family: STIX Two Text;
+  font-weight: 600;
+  line-height: 1.5;
+}
+ 
+.thq-body-large {
+  font-size: 18px;
+  font-family: Noto Sans;
+  line-height: 1.5;
+}
+ 
+.thq-body-small {
+  font-size: 16px;
+  font-family: Noto Sans;
+  line-height: 1.5;
+}
+ 
+.thq-team-image-round {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+ 
+.thq-section-padding {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-layout-space-fiveunits);
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.thq-section-max-width {
+  width: 100%;
+  max-width: var(--dl-layout-size-maxwidth);
+}
+ 
+.thq-img-ratio-1-1 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: var(--dl-layout-radius-imageradius);
+}
+ 
+.thq-img-ratio-16-9 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: var(--dl-layout-radius-imageradius);
+}
+ 
+.thq-img-ratio-4-3 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  border-radius: var(--dl-layout-radius-imageradius);
+}
+ 
+.thq-img-ratio-4-6 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/6;
+  border-radius: var(--dl-layout-radius-imageradius);
+}
+ 
+.thq-img-round {
+  width: 100%;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.thq-flex-column {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.thq-flex-row {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+ 
+.thq-grid-6 {
+  display: grid;
+  grid-gap: var(--dl-layout-space-twounits);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+ 
+.thq-grid-5 {
+  display: grid;
+  grid-gap: var(--dl-layout-space-twounits);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+ 
+.thq-card {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  padding: var(--dl-layout-space-twounits);
+  align-items: stretch;
+  border-radius: var(--dl-layout-radius-cardradius);
+  flex-direction: column;
+}
+ 
+.thq-box-shadow {
+  box-shadow: 0px 0px 5px -2px var(--dl-color-theme-neutral-dark);
+}
+ 
+.thq-grid-3 {
+  display: grid;
+  grid-gap: var(--dl-layout-space-twounits);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.thq-grid-4 {
+  display: grid;
+  grid-gap: var(--dl-layout-space-twounits);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ 
+.thq-grid-2 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-layout-space-twounits);
+  grid-template-columns: 1fr 1fr;
+}
+ 
+.thq-checkbox {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.thq-select {
+  cursor: pointer;
+  appearance: none;
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: var(--dl-layout-space-unit);
+  border-radius: var(--dl-layout-radius-inputradius);
+  padding-right: var(--dl-layout-space-twounits);
+  padding-bottom: var(--dl-layout-space-halfunit);
+  background-color: var(--dl-color-theme-neutral-light);
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg width%3D%2220%22 height%3D%2220%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 20 20%22 fill%3D%22%23000%22%3E%3Cpath d%3D%22M4.293 7.293a1 1 0 011.414 0L10 11.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+ 
+.thq-divider-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.thq-icon-small {
+  width: 24px;
+  height: 24px;
+}
+ 
+.thq-button-icon {
+  fill: var(--dl-color-theme-secondary1);
+  padding: 3px;
+  transition: 0.3s;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.thq-button-icon:hover {
+  fill: var(--dl-color-theme-secondary2);
+}
+ 
+.thq-icon-medium {
+  width: var(--dl-layout-size-small);
+  height: var(--dl-layout-size-small);
+}
+ 
+.thq-icon-x-small {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.thq-link {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, var(--dl-color-theme-primary1) 50%, var(--dl-color-theme-neutral-dark) 50%);
+  transition: background-position 300ms ease;
+  font-weight: 600;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-text-fill-color: transparent;
+}
+ 
+.thq-link:hover {
+  background-position: 0 100%;
+}
+ 
+.thq-grid-auto-300 {
+  display: grid;
+  grid-gap: var(--dl-layout-space-oneandhalfunits);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+ 
+.thq-animated-group-vertical-reverse {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  display: flex;
+  animation: scroll-y 20s linear infinite;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  animation-direction: reverse;
+}
+ 
+.thq-animated-group-horizontal-reverse {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  animation: scroll-x 20s linear infinite;
+  min-width: 100%;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-around;
+  animation-direction: reverse;
+}
+ 
+.thq-animated-group-vertical {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  display: flex;
+  animation: scroll-y 20s linear infinite;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ 
+.thq-animated-group-horizontal {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  animation: scroll-x 20s linear infinite;
+  min-width: 100%;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-around;
+}
+ 
+.thq-animated-group-container-vertical {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+ 
+.thq-animated-group-container-horizontal {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  overflow: hidden;
+}
+ 
+.thq-mask-image-vertical {
+  mask-image: linear-gradient(to bottom, transparent, black 1%, black 99%, transparent);
+}
+ 
+.thq-mask-image-horizontal {
+  mask-image: linear-gradient(to right, transparent, black 1%, black 99%, transparent);
+}
+ 
+.thq-img-scale {
+  transition: 0.3s;
+}
+ 
+.thq-img-scale:hover {
+  scale: 1.05;
+}
+ 
+.thq-animated-card-bg-1 {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  border-radius: var(--dl-layout-radius-cardradius);
+  background-color: var(--dl-color-theme-accent1);
+}
+ 
+.thq-animated-card-bg-2 {
+  transition: transform 0.3s;
+  border-radius: var(--dl-layout-radius-cardradius);
+  background-color: var(--dl-color-theme-accent2);
+}
+ 
+.thq-button-animated {
+  outline: none;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  border-width: 2px;
+}
+ 
+.thq-input::placeholder {
+  text-align: center;
+  vertical-align: middle;
+}
+ 
+.thq-animated-group-container-vertical:hover div {
+  animation-play-state: paused;
+}
+ 
+.thq-animated-group-container-horizontal:hover div {
+  animation-play-state: paused;
+}
+ 
+.thq-animated-card-bg-2:has([data-animated="true"]:hover) {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg, 0deg);
+}
+ 
+.thq-animated-card-bg-1:has([data-animated="true"]:hover) {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) skew(0deg, 0deg);
+}
+ 
+.thq-button-animated:before {
+  top: 0;
+  left: -20%;
+  color: var(--dl-color-theme-neutral-light);
+  width: 200%;
+  height: 101%;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: var(--dl-color-theme-neutral-dark);
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+ 
+.thq-button-animated:hover::before {
+  color: var(--dl-color-theme-neutral-light);
+  z-index: -1;
+  transform: scaleX(1);
+}
+ 
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.TypographyH2-48px-Semibold {
+  font-size: 48px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 600px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+.TypographyBody-18px-Regular {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+  letter-spacing: 0em;
+}
+ 
+@media(max-width: 991px) {
+  .thq-grid-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .thq-section-padding {
+    padding: var(--dl-layout-space-threeunits);
+  }
+  .thq-flex-column {
+    gap: var(--dl-layout-space-oneandhalfunits);
+  }
+  .thq-flex-row {
+    gap: var(--dl-layout-space-oneandhalfunits);
+  }
+  .thq-grid-6 {
+    grid-gap: var(--dl-layout-space-oneandhalfunits);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thq-grid-5 {
+    grid-gap: var(--dl-layout-space-oneandhalfunits);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thq-card {
+    padding: var(--dl-layout-space-oneandhalfunits);
+  }
+  .thq-grid-3 {
+    grid-gap: var(--dl-layout-space-oneandhalfunits);
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-4 {
+    grid-gap: var(--dl-layout-space-oneandhalfunits);
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-2 {
+    grid-gap: var(--dl-layout-space-oneandhalfunits);
+    grid-template-columns: 1fr;
+  }
+  .thq-img-scale {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .thq-section-padding {
+    padding: var(--dl-layout-space-oneandhalfunits);
+  }
+  .thq-flex-column {
+    gap: var(--dl-layout-space-unit);
+  }
+  .thq-flex-row {
+    gap: var(--dl-layout-space-unit);
+  }
+  .thq-grid-6 {
+    grid-gap: var(--dl-layout-space-unit);
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-5 {
+    grid-gap: var(--dl-layout-space-unit);
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-3 {
+    grid-gap: var(--dl-layout-space-unit);
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .thq-grid-4 {
+    grid-gap: var(--dl-layout-space-unit);
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .thq-grid-2 {
+    grid-gap: var(--dl-layout-space-unit);
+  }
+  .thq-grid-auto-300 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -79,7 +79,7 @@ body {
 }
 
 /* --- Hero Section Styles (Flexbox for 2 columns) --- */
-.hero-section {
+.hero-section, .desktop {
     display: flex;
     max-width: var(--max-content-width);
     margin: 0 auto;
@@ -94,7 +94,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 58px; 
+    font-size: 64px; 
     font-weight: 700;
     margin-bottom: 25px;
     color: var(--text-dark);
@@ -138,7 +138,7 @@ body {
 .hero-actions {
     display: flex;
     gap: 15px;
-    
+
 }
 
 .btn {
@@ -175,7 +175,51 @@ body {
     max-width: 600px; /* control max image size */
     height: auto;
     object-fit: contain;
+}/* Use the Figma desktop width */
+
+
+
+
+
+ /*  second part starting*/
+/* --- Second Section (Why Compliance Matters) --- */
+.desktop {
+    display: flex;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 60px 80px; 
+    gap: 80px; 
+    align-items: center;
 }
 
+/* Left Column: Image */
+.hero-image-and-stats-2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* image on left */
+    align-items: center;
+}
+
+.hero-image-and-stats-2 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.desktop-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.desktop-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+    line-height: 1.2; /* balanced spacing between the 2 lines */
+    letter-spacing: 0.5px; /* optional for readability */
+    word-break: keep-all; /* prevent awkward wrapping */
+}
 
 

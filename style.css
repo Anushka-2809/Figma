@@ -1,14 +1,13 @@
 /* --- Root Variables: Set your EXACT colors from Figma --- */
 :root {
     --primary-blue: #5555FF; 
-    --text-dark: #2B2B2B;   
-    --text-light: #5A5A5A;  
+    --text-dark: rgb(0, 0, 0);   
+    --text-light: 282828;  
     --bg-light: #F9F9FF;    
     --font-poppins: 'Poppins', sans-serif;
     --max-content-width: 1440px; /* Use the Figma desktop width */
 }
 
-/* --- Global Styles --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,10 +46,23 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text-light);
-    margin: 0 18px; 
-    font-size: 18px; 
+    margin: 0 18px;
+    font-size: 18px;
     font-weight: 500;
     transition: color 0.3s;
+}
+
+#home{
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+#Compliance{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-weight: 700;
+    color: var(--primary-blue);
 }
 
 .contact-btn {
@@ -148,125 +160,18 @@ body {
 
 /* --- Right Column (Image/Stats) Styles --- */
 .hero-image-and-stats {
-    flex: 1;
-    position: relative;
-    /* Ensure image/stats are centered within this container */
+    flex: 1; /* ensures it takes equal space beside the text */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* pushes image to the right */
     align-items: center;
-    height: 550px; 
 }
 
-.main-illustration {
-    /* Style the image placeholder/tag */
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.hero-image-and-stats img {
+    width: 100%; /* make it responsive */
+    max-width: 600px; /* control max image size */
+    height: auto;
+    object-fit: contain;
 }
 
-.background-shape {
-    position: absolute;
-    width: 90%; 
-    height: 90%;
-    background-color: white; 
-    border-radius: 50%; 
-    z-index: 1;
-    /* Adjust top/right/left/bottom to align with Figma */
-    top: 5%; 
-    right: 0;
-}
 
-.stat-box {
-    position: absolute;
-    background-color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    z-index: 3; 
-}
 
-/* Position the specific stat boxes (must be adjusted precisely) */
-.rating-box {
-    top: 50%;
-    left: 70%; 
-}
-
-.trust-box {
-    bottom: 25%;
-    left: 45%; 
-}
-
-/* Arrows position - needs absolute positioning as per Figma */
-.arrow-elements {
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    font-size: 30px;
-    color: #DDDDFF; /* Light purple color for the arrows */
-    z-index: 2;
-}
-
-/* --- Fully Fluid Responsive Design (REQUIRED!) --- */
-
-/* Tablet View */
-@media (max-width: 1024px) {
-    .navbar, .hero-section {
-        padding: 40px;
-    }
-
-    .hero-section {
-        flex-direction: column; /* Stack columns vertically */
-        gap: 40px;
-    }
-
-    .hero-content, .hero-image-and-stats {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .hero-image-and-stats {
-        height: 400px; 
-    }
-
-    .hero-content h1 {
-        font-size: 40px;
-    }
-
-    .hero-actions {
-        justify-content: center; 
-    }
-
-    .checklist {
-        text-align: left; /* Keep list items left-aligned */
-    }
-}
-
-/* Mobile View */
-@media (max-width: 600px) {
-    .navbar {
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .nav-links {
-        /* Consider using JS for a mobile toggle menu, but for pure CSS, you might hide them */
-        display: none; 
-    }
-
-    .navbar .contact-btn {
-        margin-top: 15px;
-    }
-    
-    .hero-actions {
-        flex-direction: column; /* Stack buttons vertically */
-    }
-
-    .primary-btn, .secondary-btn {
-        width: 100%;
-    }
-
-    .hero-image-and-stats {
-        height: 300px; /* Smaller illustration area */
-    }
-}

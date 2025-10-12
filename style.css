@@ -48,7 +48,8 @@ body {
     text-decoration: none;
     color: var(--text-light);
     margin: 0 18px; 
-    font-size: 16px; 
+    font-size: 18px; 
+    font-weight: 500;
     transition: color 0.3s;
 }
 

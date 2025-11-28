@@ -3,9 +3,9 @@
     --primary-blue: #5555FF; 
     --text-dark: rgb(0, 0, 0);   
     --text-light: 282828;  
-    --bg-light: #F9F9FF;    
+    --bg-light: #FFFFFF;    
     --font-poppins: 'Poppins', sans-serif;
-    --max-content-width: 1440px; /* Use the Figma desktop width */
+    --max-content-width: 1440px; 
 }
 
 * {

@@ -2,9 +2,9 @@
 :root {
     --primary-blue: #5555FF; 
     --text-dark: rgb(0, 0, 0);   
-    --text-light: 282828;  
+    --text-light: #000000;  
     --bg-light: #FFFFFF;    
-    --font-poppins: 'Poppins', sans-serif;
+    --font-poppins: 'Roboto';
     --max-content-width: 1440px; 
 }
 
@@ -33,7 +33,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    font-size: 28px; 
+    font-size: 18px; 
     font-weight: 700;
     color: var(--text-dark);
 }
@@ -110,14 +110,14 @@ body {
 }
 
 .hero-description {
-    margin-bottom: 30px;
-    color: var(--text-light);
+    margin-bottom: 10px;
+    color: #000000;
     font-size: 18px; 
 }
 
 .checklist {
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .checklist li {
@@ -213,16 +213,17 @@ body {
 }
 
 .desktop-content h1 {
-    font-size: 48px;
+    font-size: 48px; /* Ensure font size is 48px */
     font-weight: 700;
     margin-bottom: 25px;
     color: var(--text-dark);
     line-height: 1.2; 
     letter-spacing: 0.5px; 
     word-break: keep-all; 
+    position: relative; /* Required for positioning underline */
 }
 
-/* Right column for the "Why Compliance Matters" section */
+
 .desktop-right {
     flex: 1;
     max-width: 50%;
@@ -260,7 +261,7 @@ body {
 }
 
 .desktop-intro {
-    color: var(--text-light);
+    color: #000000;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -276,12 +277,11 @@ body {
     display: flex;
     gap: 18px;
     align-items: center;
-    background: white;
+    background: #FAFBFF;
     border-radius: 12px;
     padding: 36px;
     min-height: 120px;
-    box-shadow: 0 6px 18px rgba(34, 43, 77, 0.06);
-    border: 1px solid rgba(34, 43, 77, 0.04);
+    border: 1px solid #E2E7FF;
 }
 
 .icon-box {
@@ -310,9 +310,10 @@ body {
 
 .card-body p {
     font-size: 16px;
-    color: var(--text-light);
+    color: #000000;
     margin: 0;
 }
+
 
 /* ----------------- Responsive: Mobile-first adjustments ----------------- */
 @media (max-width: 768px) {

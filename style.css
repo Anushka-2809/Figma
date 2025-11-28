@@ -20,14 +20,14 @@ body {
     line-height: 1.6;
 }
 
-/* --- Header / Navbar Styles --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: var(--max-content-width); 
     margin: 0 auto;
-    padding: 20px 80px; /* Adjust padding exactly */
+    padding: 20px 80px;
 }
 
 .logo-container {
@@ -314,6 +314,24 @@ body {
     margin: 0;
 }
 
+/* Add underline-Vector.png under "Compliance" text */
+.compliance-text {
+    position: relative; /* Required for positioning underline */
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+/* Underline Vector PNG */
+.compliance-text::after {
+    content: url(assets/underline-Vector.png); /* Path to the underline-Vector.png */
+    position: absolute;
+    bottom: -10px; /* Adjust spacing below text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the PNG */
+    width: auto;
+    height: auto;
+}
+
 
 /* ----------------- Responsive: Mobile-first adjustments ----------------- */
 @media (max-width: 768px) {
@@ -323,29 +341,56 @@ body {
     .nav-links { display: none; }
     .navbar { justify-content: flex-start; align-items: center; }
     .hamburger { margin-left: auto; }
-    .hero-section, .desktop { padding: 40px 24px; gap: 24px; }
+    .hero-section, .desktop {
+        padding: 20px; /* Adjust padding for mobile */
+        gap: 20px; /* Reduce gap for compact layout */
+        flex-direction: column; /* Stack columns */
+    }
 
-    /* Stack columns */
-    .hero-section, .desktop { flex-direction: column; }
+    .hero-content, .hero-image-and-stats, .desktop-content, .desktop-right {
+        max-width: 100%;
+        flex: none;
+        text-align: center; /* Center align content */
+    }
 
-    .hero-content, .hero-image-and-stats, .desktop-content, .desktop-right { max-width: 100%; flex: none; }
+    .hero-content h1, .desktop-content h1 {
+        font-size: 28px; /* Adjust font size for headings */
+        text-align: center;
+    }
 
-    .hero-content h1 { font-size: 32px; text-align: center; }
-    .desktop-content h1 { font-size: 28px; text-align: center; }
+    .hero-description, .desktop-intro {
+        font-size: 16px; /* Adjust font size for descriptions */
+        text-align: center;
+    }
 
-    .hero-description, .desktop-intro { font-size: 15px; text-align: center; }
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
 
-    .hero-actions { flex-direction: column; gap: 12px; }
-    .btn { width: 100%; padding: 12px 16px; }
+    .btn {
+        width: 100%;
+        padding: 12px 16px; /* Adjust button size */
+    }
 
-    .hero-image-and-stats img, .hero-image-and-stats-2 img { max-width: 320px; margin: 0 auto; }
+    .hero-image-and-stats img, .hero-image-and-stats-2 img {
+        max-width: 320px; /* Adjust image size */
+        margin: 0 auto;
+    }
 
-    /* Cards: reduce padding, use full width */
-    .info-card { padding: 18px; min-height: auto; }
-    .info-cards { gap: 18px; margin-top: 14px; }
+    .info-card {
+        padding: 18px; /* Reduce padding */
+        min-height: auto;
+    }
 
-    /* Hide decorative vectors on small screens to avoid overlap */
-    .vector1, .vector2 { display: none; }
+    .info-cards {
+        gap: 18px; /* Reduce gap */
+        margin-top: 14px;
+    }
+
+    .vector1, .vector2 {
+        display: none; /* Hide decorative vectors */
+    }
 }
 
 /* Extra small phones - tighten spacing */

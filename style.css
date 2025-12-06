@@ -328,9 +328,16 @@ body {
     position: relative; /* Required for positioning underline */
     font-weight: 700;
     color: var(--primary-blue);
-    border-bottom: 4px solid var(--primary-blue);
-    padding-bottom: 4px;
-    display: inline-block;
+}
+
+.compliance-text::after {
+    content: url(assets/underline-Vector.png); /* Path to the underline-Vector.png */
+    position: absolute;
+    bottom: -10px; /* Adjust spacing below text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the PNG */
+    width: auto;
+    height: auto;
 }
 
 

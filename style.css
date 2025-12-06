@@ -65,6 +65,15 @@ body {
     color: var(--primary-blue);
 }
 
+.underline-img {
+    display: inline-block;
+    background-image: url("underline-vector.png");
+    background-repeat: no-repeat;
+    background-size: 100% 8px;   /* Adjust underline height */
+    background-position: bottom; /* Position underline below text */
+    padding-bottom: 6px;         /* Space for the underline */
+}
+
 .contact-btn {
     background-color: var(--primary-blue);
     color: white;
@@ -319,6 +328,9 @@ body {
     position: relative; /* Required for positioning underline */
     font-weight: 700;
     color: var(--primary-blue);
+    border-bottom: 4px solid var(--primary-blue);
+    padding-bottom: 4px;
+    display: inline-block;
 }
 
 
